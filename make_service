@@ -1,5 +1,6 @@
-cp secure-tunnel@.service /etc/systemd/system/
-cp secure-tunnel@aliyun /etc/default/
+#!/bin/sh
+sudo cp secure-tunnel@.service /etc/systemd/system/
+sudo cp secure-tunnel@aliyun /etc/default/
 sudo systemctl start secure-tunnel@aliyun.service
 sudo systemctl enable secure-tunnel@aliyun.service
 sudo systemctl status secure-tunnel@aliyun.service
